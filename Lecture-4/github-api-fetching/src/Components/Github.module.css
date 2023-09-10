@@ -1,0 +1,15 @@
+.user{
+    border: 10px solid red;
+    margin: 20px;
+    width: 350px;
+}
+
+.user img{
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
