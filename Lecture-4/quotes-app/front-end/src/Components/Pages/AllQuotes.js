@@ -9,7 +9,8 @@ const AllQuotes = () => {
 
   async function getQuotes(){
     const res = await axios.get('http://localhost:8080/allquotes')
-    console.log(res);
+    // console.log(res.data);
+    setQuotes(res.data);
   }
 
   useEffect( ()=>{
@@ -27,6 +28,7 @@ const AllQuotes = () => {
               key={index}
               author={quote.author}
               text={quote.text}
+              id={quote._id}
             />
           })
         }
